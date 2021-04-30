@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users",
+  "info": {
+    "name": "Workers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Username": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "DNI": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "SecurityNumber": {
+      "type": "biginteger"
+    },
+    "CellNumber": {
+      "type": "string",
+      "required": true
+    },
+    "Province": {
+      "type": "string",
+      "required": true
+    },
+    "Born": {
+      "type": "date",
+      "required": true
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "projects": {
+      "via": "workers",
+      "collection": "projects",
+      "dominant": true
+    },
+    "jobs": {
+      "via": "workers",
+      "collection": "job",
+      "dominant": true
+    },
+    "objectives": {
+      "collection": "objectives",
+      "via": "worker"
+    },
+    "tasks": {
+      "collection": "task",
+      "via": "workers",
+      "dominant": true
+    }
+  }
+}

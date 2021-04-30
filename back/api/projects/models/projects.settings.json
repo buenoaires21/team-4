@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "ProjectID": {
+      "type": "uid",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Province": {
+      "type": "string",
+      "required": true
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "materials": {
+      "collection": "materials",
+      "via": "projects",
+      "dominant": true
+    },
+    "workers": {
+      "via": "projects",
+      "collection": "users"
+    }
+  }
+}

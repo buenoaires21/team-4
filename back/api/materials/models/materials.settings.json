@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "name": "Materials"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TicketNumber": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Provider": {
+      "type": "string",
+      "required": true
+    },
+    "projects": {
+      "via": "materials",
+      "collection": "projects"
+    }
+  }
+}

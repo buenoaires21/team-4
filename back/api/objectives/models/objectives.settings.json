@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objectives",
+  "info": {
+    "name": "Objectives"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "worker": {
+      "via": "objectives",
+      "model": "users"
+    }
+  }
+}
