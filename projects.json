@@ -1,0 +1,18 @@
+[
+    {
+      "nombre": "Escuela",
+      "titulo": "Construccion de escuela",
+      "codigo": 123,
+      "provincia": "Buenos Aires",
+      "ciudad": "Castelar",
+      "id": 0
+    },
+    {
+      "nombre": "Jardin",
+      "titulo": "Construccion de jardin",
+      "codigo": 123,
+      "provincia": "Salta",
+      "ciudad": "Salta",
+      "id": 1
+    }
+]
