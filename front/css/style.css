@@ -1,32 +1,26 @@
 .footer {
-    margin-top: 1.5rem;
-    padding: 2rem;
-    background-color: gray;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #bc2427;
 }
-.textos{
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: .150rem;
-}
-
-.textos-light{
-    font-weight: 300;
-}
-.textos-white{
-    color: #fff;
-}
-.textos-gray{
-    color:#999;
+.textos {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
 }
 
-div{
-    height: 150px;
-    width: 100%;
-    background-image: url("../img/banner_rojo.jpeg");
+.textos-light {
+  font-weight: 300;
+}
+.textos-white {
+  color: #fff;
+}
+.textos-gray {
+  color: #999;
 }
 
-.contenedor{
-    margin: 1rem;
+.contenedor {
+  margin: 1rem;
 }
