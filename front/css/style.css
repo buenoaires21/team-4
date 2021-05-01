@@ -20,3 +20,13 @@
 .textos-gray{
     color:#999;
 }
+
+div{
+    height: 150px;
+    width: 100%;
+    background-image: url("../img/banner_rojo.jpeg");
+}
+
+.contenedor{
+    margin: 1rem;
+}
